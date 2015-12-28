@@ -37,8 +37,4 @@ public class Network {
 	public void groups(){
 		
 	}
-	
-	public static void main(String[] args) {
-		System.out.println("Eclipse 7abeeby");
-	}
 }
