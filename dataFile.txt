@@ -2,7 +2,7 @@
 
 Muhammad Salah, UWA Developer, Microsoft, Haram
 Hadeer Karem, Web Developer, Google, Helwan
-Aya Kahled, Fashion Designer, Aya Atelier, 6 October
+Aya Khaled, Fashion Designer, Aya Atelier, 6 October
 Yomna Gad, Art director, Pixar, Hadayek el qubba
 Fatma Mohammed, Network Engineer, Google, 6 October
 Omar Essam, Web Developer, Google, Maadi
@@ -14,10 +14,10 @@ Abdulaziz Alaa, Game Developer, Konami, Al-Rehab
 Hadeer Karem, Aya Khaled, Mo'men Al-Malky
 Muhammad Salah, Ali Korayem, Karim Ahmed
 Muhammad Salah, Yomna Gad, Fatma Mohammed
-Aya Khaled
+Aya Khaled, Karim Ahmed
 Aya Khaled, Abdulaziz Alaa
 Ali Korayem, Karim Ahmed
 Hadeer Karem, Omar Essam
 Muhammad Salah
-Hadeer Karem, Omar Essam
-Fatma Mohammed
+Hadeer Karem, Omar Essam, Yomna Gad
+Fatma Mohammedb
