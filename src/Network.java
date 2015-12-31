@@ -12,7 +12,7 @@ public class Network {
 		int noOfUsers = 0;
 		int startIndexOfFriendList = 0;
 		//open input stream dataFile.txt for reading purpose.
-		BufferedReader br = new BufferedReader(new FileReader("D:/Clg/Social-Network/dataFile.txt"));
+		BufferedReader br = new BufferedReader(new FileReader("dataFile.txt"));
 		try {
 			//the lines on file
 			ArrayList<String> line = new ArrayList<String>();
