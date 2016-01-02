@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class User {
 	String name, occupation, company, address;
-	ArrayList<User>friendList;
+	public ArrayList<String>friendList;
 	
 	public User(String name, String occupation, String company, String address){
 		this.name = name;
