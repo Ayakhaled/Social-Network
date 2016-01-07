@@ -3,6 +3,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedHashSet;
 
 public class Network {
 	ArrayList<User>allUsers = new ArrayList<User>();
@@ -76,20 +77,21 @@ public class Network {
 	}
 	
     //Search for specific user by his name and return his info.
-	public ArrayList<String> searchByName(String searchName) throws IOException{
+	public User searchByName(String searchName) throws IOException{
 		allUsers = usersData();
 
-		ArrayList<String> foundUser = new ArrayList<String>();
+		User foundUser = new User("", "", "", "");
 
 		for (int i = 0; i < allUsers.size(); i++) {
 			if (allUsers.get(i).name.equals(searchName)){
 
-				foundUser.add(allUsers.get(i).name);
-				foundUser.add(allUsers.get(i).occupation);
-				foundUser.add(allUsers.get(i).company);
-				foundUser.add(allUsers.get(i).address);
+				String name = allUsers.get(i).name;
+				String occupation = allUsers.get(i).occupation;
+				String company = allUsers.get(i).company;
+				String address = allUsers.get(i).address;
 
-				foundUser.addAll(allUsers.get(i).friendList);
+				foundUser = new User(name, occupation, company, address);
+				foundUser.friendList = allUsers.get(i).friendList;
 
 				break;
 			}
@@ -105,11 +107,11 @@ public class Network {
         ArrayList<String> userInfo1 = new ArrayList<String>();
 		ArrayList<String> userInfo2 = new ArrayList<String>();
 
-		userInfo1 = searchByName(user1);
-		userInfo2 = searchByName(user2);
+		userInfo1 = searchByName(user1).friendList;
+		userInfo2 = searchByName(user2).friendList;
 
-		for (int i = 4; i < userInfo1.size(); i++) {
-			for (int j = 4; j < userInfo2.size(); j++) {
+		for (int i = 0; i < userInfo1.size(); i++) {
+			for (int j = 0; j < userInfo2.size(); j++) {
 				if (userInfo1.get(i).equals(userInfo2.get(j))){
 					mutualFriends.add(userInfo1.get(i));
 					break;
@@ -119,18 +121,82 @@ public class Network {
 
 		return mutualFriends;
 	}
-	
+
+	public boolean hasMutualFriend(String user1, String user2) throws IOException{
+		boolean mutual = false;
+
+		ArrayList<String> listOfMutualFriends = new ArrayList<String>();
+		listOfMutualFriends = mutualFriends(user1, user2);
+		if (listOfMutualFriends.size() == 0)
+			mutual = false;
+		else
+			mutual = true;
+
+		return mutual;
+	}
     //This function returns the shortest path between 2 non-friend users
-	public ArrayList<String> shortestPath(){
+	public ArrayList<String> shortestPath(String source, String destination) throws IOException{
 		ArrayList<String> myPath = new ArrayList();
 		return myPath;
 	}
-	
+
+	public boolean isFriend(String user1, String user2) throws IOException{
+		boolean friend = false;
+		ArrayList<String> userInfo = new ArrayList<String>();
+		userInfo = searchByName(user1).friendList;
+		for (int i =0; i < userInfo.size(); i++) {
+			if (user2.equals(userInfo.get(i)))
+				friend = true;
+		}
+
+		return friend;
+	}
+
     //This Function Follows 2 criteria on suggesting friends.
     //The first one is: the max number of links between the 2 users should be 5.
     //The seconed is: suggest friends working for the same company.
-	public ArrayList<String> suggestFriends(){
-		ArrayList<String> suggestedFriends = new ArrayList();
+	public LinkedHashSet<String> suggestFriends(String user) throws IOException{
+
+		LinkedHashSet<String> suggestedFriends = new LinkedHashSet<String>();
+
+		ArrayList<String> listSuggestedFriends = new ArrayList<String>();
+
+		ArrayList<String> friends = new ArrayList<String>();
+		friends = searchByName(user).friendList;
+
+		ArrayList<String> forbiddenSuggestion = new ArrayList<String>();
+		forbiddenSuggestion.add(user);
+		forbiddenSuggestion.addAll(friends);
+
+
+		String userCompany = searchByName(user).company;
+		for (int i = 0; i < usersData().size(); i++) {
+			if (usersData().get(i).company.equals(userCompany) && !usersData().get(i).name.equals(user) && !isFriend(user, usersData().get(i).name)){
+				listSuggestedFriends.add(usersData().get(i).name);
+			}
+		}
+
+		for (int j = 0; j < 4 ; j++) {
+			for (int i = 0; i < friends.size(); i++) {
+				ArrayList<String> temp = new ArrayList<String>();
+				temp = searchByName(friends.get(i)).friendList;
+				listSuggestedFriends.addAll(temp);
+			}
+			friends.clear();
+			friends.addAll(listSuggestedFriends);
+		}
+
+//		ArrayList<String> tempFriends = new ArrayList<String>();
+//		tempFriends.addAll(suggestedFriends);
+//		for (int i = 0; i < forbiddenSuggestion.size(); i++) {
+//			for (int j = 0; j < tempFriends.size(); j++) {
+//				if (forbiddenSuggestion.get(i).equals(tempFriends.get(j))){
+//					tempFriends.remove(i);
+//				}
+//			}
+//		}
+//		suggestedFriends.clear();
+//		suggestedFriends.addAll(tempFriends);
 		return suggestedFriends;
 	}
 	

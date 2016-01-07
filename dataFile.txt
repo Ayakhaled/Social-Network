@@ -10,14 +10,20 @@ Ali Korayem, Game Developer, Konami, Heliopolis
 Mo'men Al-Malky, Android Developer, Google, Nasr-City
 Karim Ahmed, Guitarist, Pixar, Hadayek el qubba
 Abdulaziz Alaa, Game Developer, Konami, Al-Rehab
+Nourhan Taymour, Student, Ain Shams Univ, Cairo
+Nada Diaa, Student, Ain Shams Univ, Cairo
+Mai Khaled, Student, City School, 6 October
 
 Hadeer Karem, Aya Khaled, Mo'men Al-Malky
-Muhammad Salah, Ali Korayem, Karim Ahmed
+Muhammad Salah, Ali Korayem, Karim Ahmed, Fatma Mohammed
 Muhammad Salah, Yomna Gad, Fatma Mohammed
 Aya Khaled, Karim Ahmed
-Aya Khaled, Abdulaziz Alaa
-Ali Korayem, Karim Ahmed
+Aya Khaled, Abdulaziz Alaa, Hadeer Karem
+Ali Korayem, Karim Ahmed, Nourhan Taymour
 Hadeer Karem, Omar Essam
 Muhammad Salah
 Hadeer Karem, Omar Essam, Yomna Gad
-Fatma Mohammedb
+Fatma Mohammed
+Omar Essam, Nada Diaa
+Nourhan Taymour, Mai Khaled
+Nada Diaa
