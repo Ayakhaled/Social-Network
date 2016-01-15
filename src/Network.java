@@ -246,7 +246,6 @@ public class Network {
 			}
 		}
 		suggestedFriends.removeAll(forbidFriends);
-		System.out.println(suggestedFriends);
 		return suggestedFriends;
 	}
 	
