@@ -1,3 +1,5 @@
+import sun.awt.image.ImageWatched;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -165,10 +167,8 @@ public class Network {
 		while(!queue.isEmpty()){
 			 String parent = (String)queue.poll();
 			 friends = searchByName(parent).friendList;
-//			 System.out.println(friends);
-			 
+
 			 for(int i=0; i<friends.size(); i++){
-//				 System.out.println(visited.get(friends.get(i)));
 				 if(!visited.get(friends.get(i)))
 					 Predecessors.put(friends.get(i), parent);
 				 
@@ -186,7 +186,6 @@ public class Network {
 		while(!destination.equals(source)){
 			destination = Predecessors.get(destination);
 			myPath.add(destination);
-			System.out.println(destination);
 		}
 		
 		myPath.remove(myPath.size()-1);
@@ -212,44 +211,42 @@ public class Network {
 
 		LinkedHashSet<String> suggestedFriends = new LinkedHashSet<String>();
 
-		ArrayList<String> listSuggestedFriends = new ArrayList<String>();
-
-		ArrayList<String> friends = new ArrayList<String>();
-		friends = searchByName(user).friendList;
-
-		ArrayList<String> forbiddenSuggestion = new ArrayList<String>();
-		forbiddenSuggestion.add(user);
-		forbiddenSuggestion.addAll(friends);
-
-
+		//Company Criteria.
 		String userCompany = searchByName(user).company;
 		for (int i = 0; i < usersData().size(); i++) {
 			if (usersData().get(i).company.equals(userCompany) && !usersData().get(i).name.equals(user) && !isFriend(user, usersData().get(i).name)){
-				listSuggestedFriends.add(usersData().get(i).name);
+				suggestedFriends.add(usersData().get(i).name);
 			}
 		}
 
-		for (int j = 0; j < 4 ; j++) {
-			for (int i = 0; i < friends.size(); i++) {
-				ArrayList<String> temp = new ArrayList<String>();
-				temp = searchByName(friends.get(i)).friendList;
-				listSuggestedFriends.addAll(temp);
-			}
-			friends.clear();
-			friends.addAll(listSuggestedFriends);
+		//Max number of links criteria
+		HashMap<String, Boolean> visitedUsers = new HashMap<>();
+		LinkedHashSet<String> forbidFriends = new LinkedHashSet<String>();
+		Queue friendsQueue = new LinkedList<>();
+		ArrayList<String> friendList = new ArrayList<String>();
+		friendList = searchByName(user).friendList;
+		forbidFriends.add(user);
+		for (int i = 0; i < friendList.size(); i++) {
+			friendsQueue.add(friendList.get(i));
+			forbidFriends.add(friendList.get(i));
 		}
 
-//		ArrayList<String> tempFriends = new ArrayList<String>();
-//		tempFriends.addAll(suggestedFriends);
-//		for (int i = 0; i < forbiddenSuggestion.size(); i++) {
-//			for (int j = 0; j < tempFriends.size(); j++) {
-//				if (forbiddenSuggestion.get(i).equals(tempFriends.get(j))){
-//					tempFriends.remove(i);
-//				}
-//			}
-//		}
-//		suggestedFriends.clear();
-//		suggestedFriends.addAll(tempFriends);
+		String queueHead = "";
+		for (int i = 0; i < 4; i++) {
+			int noOfLoops = friendsQueue.size();
+			for (int j = 0; j < noOfLoops; j++) {
+				ArrayList<String> list = new ArrayList<String>();
+				queueHead = (String)friendsQueue.poll();
+				list = searchByName(queueHead).friendList;
+
+				for (int k = 0; k < list.size(); k++) {
+					friendsQueue.add(list.get(k));
+					suggestedFriends.add(list.get(k));
+				}
+			}
+		}
+		suggestedFriends.removeAll(forbidFriends);
+		System.out.println(suggestedFriends);
 		return suggestedFriends;
 	}
 	
