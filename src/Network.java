@@ -121,19 +121,6 @@ public class Network {
 
 		return mutualFriends;
 	}
-
-	public boolean hasMutualFriend(String user1, String user2) throws IOException{
-		boolean mutual = false;
-
-		ArrayList<String> listOfMutualFriends = new ArrayList<String>();
-		listOfMutualFriends = mutualFriends(user1, user2);
-		if (listOfMutualFriends.size() == 0)
-			mutual = false;
-		else
-			mutual = true;
-
-		return mutual;
-	}
     
 	//This function returns the shortest path between 2 non-friend users
 	public ArrayList<String> shortestPath(String source, String destination) throws IOException{
@@ -192,18 +179,6 @@ public class Network {
 		return myPath;
 	}
 
-	public boolean isFriend(String user1, String user2) throws IOException{
-		boolean friend = false;
-		ArrayList<String> userInfo = new ArrayList<String>();
-		userInfo = searchByName(user1).friendList;
-		for (int i =0; i < userInfo.size(); i++) {
-			if (user2.equals(userInfo.get(i)))
-				friend = true;
-		}
-
-		return friend;
-	}
-
     //This Function Follows 2 criteria on suggesting friends.
     //The first one is: the max number of links between the 2 users should be 5.
     //The second is: suggest friends working for the same company.
@@ -214,7 +189,7 @@ public class Network {
 		//Company Criteria.
 		String userCompany = searchByName(user).company;
 		for (int i = 0; i < usersData().size(); i++) {
-			if (usersData().get(i).company.equals(userCompany) && !usersData().get(i).name.equals(user) && !isFriend(user, usersData().get(i).name)){
+			if (usersData().get(i).company.equals(userCompany) && !usersData().get(i).name.equals(user)){
 				suggestedFriends.add(usersData().get(i).name);
 			}
 		}
@@ -246,6 +221,7 @@ public class Network {
 			}
 		}
 		suggestedFriends.removeAll(forbidFriends);
+		System.out.println(suggestedFriends);
 		return suggestedFriends;
 	}
 	

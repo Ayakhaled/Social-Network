@@ -61,12 +61,20 @@
       <file leaf-file-name="Network.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Network.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5996377">
-              <caret line="248" column="0" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
+            <state vertical-scroll-proportion="-1.0585365">
+              <caret line="179" column="5" selection-start-line="179" selection-start-column="5" selection-end-line="179" selection-end-column="5" />
               <folding>
-                <element signature="e#6445#6453#0" expanded="true" />
-                <element signature="e#6546#6554#0" expanded="true" />
-                <element signature="e#6945#6953#0" expanded="true" />
+                <element signature="e#206#212#0" expanded="true" />
+                <element signature="method#usersData#0;class#Network#0" expanded="false" />
+                <element signature="method#register#0;class#Network#0" expanded="false" />
+                <element signature="method#searchByName#0;class#Network#0" expanded="false" />
+                <element signature="method#mutualFriends#0;class#Network#0" expanded="false" />
+                <element signature="method#shortestPath#0;class#Network#0" expanded="false" />
+                <element signature="e#5299#5307#0" expanded="true" />
+                <element signature="e#5741#5749#0" expanded="true" />
+                <element signature="e#5842#5850#0" expanded="true" />
+                <element signature="e#6241#6249#0" expanded="true" />
+                <element signature="method#groups#0;class#Network#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -499,12 +507,12 @@
       <workItem from="1452201148329" duration="1830000" />
       <workItem from="1452206051426" duration="3714000" />
       <workItem from="1452630134668" duration="1637000" />
-      <workItem from="1452807478816" duration="7837000" />
+      <workItem from="1452807478816" duration="8788000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59948000" />
+    <option name="totallyTimeSpent" value="60899000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -516,7 +524,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -527,7 +535,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.052287582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28431374" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19213313" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -623,9 +631,17 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="186" column="0" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
           <folding>
-            <element signature="e#6445#6453#0" expanded="true" />
-            <element signature="e#6546#6554#0" expanded="true" />
-            <element signature="e#6945#6953#0" expanded="true" />
+            <element signature="e#206#212#0" expanded="true" />
+            <element signature="method#usersData#0;class#Network#0" expanded="false" />
+            <element signature="method#register#0;class#Network#0" expanded="false" />
+            <element signature="method#searchByName#0;class#Network#0" expanded="false" />
+            <element signature="method#mutualFriends#0;class#Network#0" expanded="false" />
+            <element signature="method#shortestPath#0;class#Network#0" expanded="false" />
+            <element signature="e#5299#5307#0" expanded="true" />
+            <element signature="e#5741#5749#0" expanded="true" />
+            <element signature="e#5842#5850#0" expanded="true" />
+            <element signature="e#6241#6249#0" expanded="true" />
+            <element signature="method#groups#0;class#Network#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -662,9 +678,17 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#6445#6453#0" expanded="true" />
-            <element signature="e#6546#6554#0" expanded="true" />
-            <element signature="e#6945#6953#0" expanded="true" />
+            <element signature="e#206#212#0" expanded="true" />
+            <element signature="method#usersData#0;class#Network#0" expanded="false" />
+            <element signature="method#register#0;class#Network#0" expanded="false" />
+            <element signature="method#searchByName#0;class#Network#0" expanded="false" />
+            <element signature="method#mutualFriends#0;class#Network#0" expanded="false" />
+            <element signature="method#shortestPath#0;class#Network#0" expanded="false" />
+            <element signature="e#5299#5307#0" expanded="true" />
+            <element signature="e#5741#5749#0" expanded="true" />
+            <element signature="e#5842#5850#0" expanded="true" />
+            <element signature="e#6241#6249#0" expanded="true" />
+            <element signature="method#groups#0;class#Network#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -701,9 +725,17 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#6445#6453#0" expanded="true" />
-            <element signature="e#6546#6554#0" expanded="true" />
-            <element signature="e#6945#6953#0" expanded="true" />
+            <element signature="e#206#212#0" expanded="true" />
+            <element signature="method#usersData#0;class#Network#0" expanded="false" />
+            <element signature="method#register#0;class#Network#0" expanded="false" />
+            <element signature="method#searchByName#0;class#Network#0" expanded="false" />
+            <element signature="method#mutualFriends#0;class#Network#0" expanded="false" />
+            <element signature="method#shortestPath#0;class#Network#0" expanded="false" />
+            <element signature="e#5299#5307#0" expanded="true" />
+            <element signature="e#5741#5749#0" expanded="true" />
+            <element signature="e#5842#5850#0" expanded="true" />
+            <element signature="e#6241#6249#0" expanded="true" />
+            <element signature="method#groups#0;class#Network#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -740,9 +772,17 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="189" column="45" selection-start-line="189" selection-start-column="45" selection-end-line="189" selection-end-column="45" />
           <folding>
-            <element signature="e#6445#6453#0" expanded="true" />
-            <element signature="e#6546#6554#0" expanded="true" />
-            <element signature="e#6945#6953#0" expanded="true" />
+            <element signature="e#206#212#0" expanded="true" />
+            <element signature="method#usersData#0;class#Network#0" expanded="false" />
+            <element signature="method#register#0;class#Network#0" expanded="false" />
+            <element signature="method#searchByName#0;class#Network#0" expanded="false" />
+            <element signature="method#mutualFriends#0;class#Network#0" expanded="false" />
+            <element signature="method#shortestPath#0;class#Network#0" expanded="false" />
+            <element signature="e#5299#5307#0" expanded="true" />
+            <element signature="e#5741#5749#0" expanded="true" />
+            <element signature="e#5842#5850#0" expanded="true" />
+            <element signature="e#6241#6249#0" expanded="true" />
+            <element signature="method#groups#0;class#Network#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -779,9 +819,17 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#6445#6453#0" expanded="true" />
-            <element signature="e#6546#6554#0" expanded="true" />
-            <element signature="e#6945#6953#0" expanded="true" />
+            <element signature="e#206#212#0" expanded="true" />
+            <element signature="method#usersData#0;class#Network#0" expanded="false" />
+            <element signature="method#register#0;class#Network#0" expanded="false" />
+            <element signature="method#searchByName#0;class#Network#0" expanded="false" />
+            <element signature="method#mutualFriends#0;class#Network#0" expanded="false" />
+            <element signature="method#shortestPath#0;class#Network#0" expanded="false" />
+            <element signature="e#5299#5307#0" expanded="true" />
+            <element signature="e#5741#5749#0" expanded="true" />
+            <element signature="e#5842#5850#0" expanded="true" />
+            <element signature="e#6241#6249#0" expanded="true" />
+            <element signature="method#groups#0;class#Network#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -818,9 +866,17 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#6445#6453#0" expanded="true" />
-            <element signature="e#6546#6554#0" expanded="true" />
-            <element signature="e#6945#6953#0" expanded="true" />
+            <element signature="e#206#212#0" expanded="true" />
+            <element signature="method#usersData#0;class#Network#0" expanded="false" />
+            <element signature="method#register#0;class#Network#0" expanded="false" />
+            <element signature="method#searchByName#0;class#Network#0" expanded="false" />
+            <element signature="method#mutualFriends#0;class#Network#0" expanded="false" />
+            <element signature="method#shortestPath#0;class#Network#0" expanded="false" />
+            <element signature="e#5299#5307#0" expanded="true" />
+            <element signature="e#5741#5749#0" expanded="true" />
+            <element signature="e#5842#5850#0" expanded="true" />
+            <element signature="e#6241#6249#0" expanded="true" />
+            <element signature="method#groups#0;class#Network#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -857,9 +913,17 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="79" selection-start-line="14" selection-start-column="79" selection-end-line="14" selection-end-column="79" />
           <folding>
-            <element signature="e#6445#6453#0" expanded="true" />
-            <element signature="e#6546#6554#0" expanded="true" />
-            <element signature="e#6945#6953#0" expanded="true" />
+            <element signature="e#206#212#0" expanded="true" />
+            <element signature="method#usersData#0;class#Network#0" expanded="false" />
+            <element signature="method#register#0;class#Network#0" expanded="false" />
+            <element signature="method#searchByName#0;class#Network#0" expanded="false" />
+            <element signature="method#mutualFriends#0;class#Network#0" expanded="false" />
+            <element signature="method#shortestPath#0;class#Network#0" expanded="false" />
+            <element signature="e#5299#5307#0" expanded="true" />
+            <element signature="e#5741#5749#0" expanded="true" />
+            <element signature="e#5842#5850#0" expanded="true" />
+            <element signature="e#6241#6249#0" expanded="true" />
+            <element signature="method#groups#0;class#Network#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -925,14 +989,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/socialNetwork.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dataFile.txt">
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
         <state />
@@ -944,14 +1000,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/socialNetwork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Network.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5996377">
-          <caret line="248" column="0" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
+        <state vertical-scroll-proportion="-1.0585365">
+          <caret line="179" column="5" selection-start-line="179" selection-start-column="5" selection-end-line="179" selection-end-column="5" />
           <folding>
-            <element signature="e#6445#6453#0" expanded="true" />
-            <element signature="e#6546#6554#0" expanded="true" />
-            <element signature="e#6945#6953#0" expanded="true" />
+            <element signature="e#206#212#0" expanded="true" />
+            <element signature="method#usersData#0;class#Network#0" expanded="false" />
+            <element signature="method#register#0;class#Network#0" expanded="false" />
+            <element signature="method#searchByName#0;class#Network#0" expanded="false" />
+            <element signature="method#mutualFriends#0;class#Network#0" expanded="false" />
+            <element signature="method#shortestPath#0;class#Network#0" expanded="false" />
+            <element signature="e#5299#5307#0" expanded="true" />
+            <element signature="e#5741#5749#0" expanded="true" />
+            <element signature="e#5842#5850#0" expanded="true" />
+            <element signature="e#6241#6249#0" expanded="true" />
+            <element signature="method#groups#0;class#Network#0" expanded="false" />
           </folding>
         </state>
       </provider>
