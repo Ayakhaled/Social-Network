@@ -138,58 +138,53 @@ public class Network {
 		allUsers = usersData();
 		ArrayList<String> myPath = new ArrayList();
 		ArrayList<String> friends = new ArrayList();
-		
-		ArrayList<String> user1Info = new ArrayList<String>();
-		ArrayList<String> user2Info = new ArrayList<String>();
-		
-		user1Info = searchByName(source).friendList;
-		user2Info = searchByName(destination).friendList;
-		
+				
 		HashMap<String, Boolean> visited = new HashMap<String, Boolean>();
 		HashMap<String, String> Predecessors = new HashMap<String, String>();
 		
-		
-		for(int i=0; i<allUsers.size(); i++){
+			for(int i=0; i<allUsers.size(); i++){
+				
+				visited.put(allUsers.get(i).name, false);
+			}
 			
-			visited.put(allUsers.get(i).name, false);
-		}
-		
-		Queue queue = new LinkedList();
-		Queue backTrack = new LinkedList();
-		
-		//BFS start
-		queue.add(source);
-		visited.remove(source);
-		visited.put(source, true);
-		
-		while(!queue.isEmpty()){
-			 String parent = (String)queue.poll();
-			 friends = searchByName(parent).friendList;
-//			 System.out.println(friends);
-			 
-			 for(int i=0; i<friends.size(); i++){
-//				 System.out.println(visited.get(friends.get(i)));
-				 if(!visited.get(friends.get(i)))
-					 Predecessors.put(friends.get(i), parent);
+			Queue queue = new LinkedList();
+			Boolean exist = false;
+			
+			//BFS start
+			queue.add(source);
+			visited.remove(source);
+			visited.put(source, true);
+			
+			while(!queue.isEmpty()){
+				 String parent = (String)queue.poll();
+				 friends = searchByName(parent).friendList;
 				 
-				 if(!friends.get(i).equals(destination) && !visited.get(friends.get(i))){
-					 queue.add(friends.get(i));
-					 visited.remove(friends.get(i));
-					 visited.put(friends.get(i), true);
+				 for(int i=0; i<friends.size(); i++){
+					 if (friends.get(i).equals(destination)){
+						 Predecessors.put(friends.get(i), parent);
+						 exist=true;
+						 break;
+					 }
+					 else if(!visited.get(friends.get(i))){
+						 Predecessors.put(friends.get(i), parent);
+						 
+						 if(!friends.get(i).equals(destination)){
+							 queue.add(friends.get(i));
+							 visited.remove(friends.get(i));
+							 visited.put(friends.get(i), true);
+						 }
+					 }
 				 }
-				 else if (friends.get(i).equals(destination))
+				 if (exist)
 					 break;
-			 }
-		}
-		
-		myPath.add(destination);
-		while(!destination.equals(source)){
-			destination = Predecessors.get(destination);
+			}
+			
 			myPath.add(destination);
-			System.out.println(destination);
-		}
-		
-		myPath.remove(myPath.size()-1);
+			while(!destination.equals(source)){
+				destination = Predecessors.get(destination);
+				myPath.add(destination);
+			}
+				
 		return myPath;
 	}
 

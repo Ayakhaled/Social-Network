@@ -13,7 +13,7 @@ public class socialNetwork {
         //System.out.print(userf);
         ArrayList<String> path = new ArrayList<String>();
         
-        path = net.shortestPath("Muhammad Salah", "Nada Diaa");
+        path = net.shortestPath("Karim Ahmed", "Muhammad Salah");
         System.out.print(path);
 
     }
