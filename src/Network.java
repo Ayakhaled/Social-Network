@@ -121,61 +121,59 @@ public class Network {
 
 		return mutualFriends;
 	}
-    
+
 	//This function returns the shortest path between 2 non-friend users
 	public ArrayList<String> shortestPath(String source, String destination) throws IOException{
+
 		allUsers = usersData();
+
 		ArrayList<String> myPath = new ArrayList();
 		ArrayList<String> friends = new ArrayList();
-		
-		ArrayList<String> user1Info = new ArrayList<String>();
-		ArrayList<String> user2Info = new ArrayList<String>();
-		
-		user1Info = searchByName(source).friendList;
-		user2Info = searchByName(destination).friendList;
-		
+
 		HashMap<String, Boolean> visited = new HashMap<String, Boolean>();
 		HashMap<String, String> Predecessors = new HashMap<String, String>();
-		
-		
+
 		for(int i=0; i<allUsers.size(); i++){
-			
 			visited.put(allUsers.get(i).name, false);
 		}
-		
+
 		Queue queue = new LinkedList();
-		Queue backTrack = new LinkedList();
-		
+		Boolean exist = false;
+
 		//BFS start
 		queue.add(source);
 		visited.remove(source);
 		visited.put(source, true);
-		
-		while(!queue.isEmpty()){
-			 String parent = (String)queue.poll();
-			 friends = searchByName(parent).friendList;
 
-			 for(int i=0; i<friends.size(); i++){
-				 if(!visited.get(friends.get(i)))
-					 Predecessors.put(friends.get(i), parent);
-				 
-				 if(!friends.get(i).equals(destination) && !visited.get(friends.get(i))){
-					 queue.add(friends.get(i));
-					 visited.remove(friends.get(i));
-					 visited.put(friends.get(i), true);
-				 }
-				 else if (friends.get(i).equals(destination))
-					 break;
-			 }
+		while(!queue.isEmpty()){
+			String parent = (String)queue.poll();
+			friends = searchByName(parent).friendList;
+
+			for(int i=0; i<friends.size(); i++){
+				if (friends.get(i).equals(destination)){
+					Predecessors.put(friends.get(i), parent);
+					exist=true;
+					break;
+				}
+				else if(!visited.get(friends.get(i))){
+					Predecessors.put(friends.get(i), parent);
+
+					if(!friends.get(i).equals(destination)){
+						queue.add(friends.get(i));
+						visited.remove(friends.get(i));
+						visited.put(friends.get(i), true);
+					}
+				}
+			}
+			if (exist)
+				break;
 		}
-		
+
 		myPath.add(destination);
 		while(!destination.equals(source)){
 			destination = Predecessors.get(destination);
 			myPath.add(destination);
 		}
-		
-		myPath.remove(myPath.size()-1);
 		return myPath;
 	}
 

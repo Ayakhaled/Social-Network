@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84123f88-48e5-4050-a2e4-c1fe1e483c40" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\Clg\Social-Network\User.java" afterPath="" />
       <change type="DELETED" beforePath="D:\Clg\Social-Network\Network.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Clg\Social-Network\User.java" afterPath="" />
     </list>
     <ignored path="Social-Network.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,14 +27,14 @@
     <leaf>
       <file leaf-file-name="dataFile.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataFile.txt">
-          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
               <folding />
             </state>
+          </provider>
+          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+            <state />
           </provider>
         </entry>
       </file>
@@ -61,19 +61,20 @@
       <file leaf-file-name="Network.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Network.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.0585365">
-              <caret line="179" column="5" selection-start-line="179" selection-start-column="5" selection-end-line="179" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.9170732">
+              <caret line="177" column="5" selection-start-line="177" selection-start-column="5" selection-end-line="177" selection-end-column="5" />
               <folding>
                 <element signature="e#206#212#0" expanded="true" />
                 <element signature="method#usersData#0;class#Network#0" expanded="false" />
                 <element signature="method#register#0;class#Network#0" expanded="false" />
                 <element signature="method#searchByName#0;class#Network#0" expanded="false" />
                 <element signature="method#mutualFriends#0;class#Network#0" expanded="false" />
-                <element signature="method#shortestPath#0;class#Network#0" expanded="false" />
-                <element signature="e#5299#5307#0" expanded="true" />
-                <element signature="e#5741#5749#0" expanded="true" />
-                <element signature="e#5842#5850#0" expanded="true" />
-                <element signature="e#6241#6249#0" expanded="true" />
+                <element signature="e#3638#3655#0" expanded="true" />
+                <element signature="e#3711#3727#0" expanded="true" />
+                <element signature="e#5067#5075#0" expanded="true" />
+                <element signature="e#5509#5517#0" expanded="true" />
+                <element signature="e#5610#5618#0" expanded="true" />
+                <element signature="e#6009#6017#0" expanded="true" />
                 <element signature="method#groups#0;class#Network#0" expanded="false" />
               </folding>
             </state>
@@ -143,6 +144,9 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches">
+        <subPane />
+      </pane>
       <pane id="Scope">
         <subPane subId="Problems" />
         <subPane subId="Production">
@@ -155,6 +159,7 @@
         </subPane>
         <subPane subId="Tests" />
       </pane>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -189,10 +194,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches">
-        <subPane />
-      </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -508,11 +509,12 @@
       <workItem from="1452206051426" duration="3714000" />
       <workItem from="1452630134668" duration="1637000" />
       <workItem from="1452807478816" duration="8788000" />
+      <workItem from="1452947239282" duration="237000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60899000" />
+    <option name="totallyTimeSpent" value="61136000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -524,7 +526,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -535,7 +537,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28431374" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28431374" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19213313" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -600,14 +602,62 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/dataFile.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/socialNetwork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Network.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#206#212#0" expanded="true" />
+            <element signature="method#usersData#0;class#Network#0" expanded="false" />
+            <element signature="method#register#0;class#Network#0" expanded="false" />
+            <element signature="method#searchByName#0;class#Network#0" expanded="false" />
+            <element signature="method#mutualFriends#0;class#Network#0" expanded="false" />
+            <element signature="e#3638#3655#0" expanded="true" />
+            <element signature="e#3711#3727#0" expanded="true" />
+            <element signature="e#5067#5075#0" expanded="true" />
+            <element signature="e#5509#5517#0" expanded="true" />
+            <element signature="e#5610#5618#0" expanded="true" />
+            <element signature="e#6009#6017#0" expanded="true" />
+            <element signature="method#groups#0;class#Network#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataFile.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="11" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/User.java">
@@ -636,26 +686,27 @@
             <element signature="method#register#0;class#Network#0" expanded="false" />
             <element signature="method#searchByName#0;class#Network#0" expanded="false" />
             <element signature="method#mutualFriends#0;class#Network#0" expanded="false" />
-            <element signature="method#shortestPath#0;class#Network#0" expanded="false" />
-            <element signature="e#5299#5307#0" expanded="true" />
-            <element signature="e#5741#5749#0" expanded="true" />
-            <element signature="e#5842#5850#0" expanded="true" />
-            <element signature="e#6241#6249#0" expanded="true" />
+            <element signature="e#3638#3655#0" expanded="true" />
+            <element signature="e#3711#3727#0" expanded="true" />
+            <element signature="e#5067#5075#0" expanded="true" />
+            <element signature="e#5509#5517#0" expanded="true" />
+            <element signature="e#5610#5618#0" expanded="true" />
+            <element signature="e#6009#6017#0" expanded="true" />
             <element signature="method#groups#0;class#Network#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataFile.txt">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/User.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -683,26 +734,27 @@
             <element signature="method#register#0;class#Network#0" expanded="false" />
             <element signature="method#searchByName#0;class#Network#0" expanded="false" />
             <element signature="method#mutualFriends#0;class#Network#0" expanded="false" />
-            <element signature="method#shortestPath#0;class#Network#0" expanded="false" />
-            <element signature="e#5299#5307#0" expanded="true" />
-            <element signature="e#5741#5749#0" expanded="true" />
-            <element signature="e#5842#5850#0" expanded="true" />
-            <element signature="e#6241#6249#0" expanded="true" />
+            <element signature="e#3638#3655#0" expanded="true" />
+            <element signature="e#3711#3727#0" expanded="true" />
+            <element signature="e#5067#5075#0" expanded="true" />
+            <element signature="e#5509#5517#0" expanded="true" />
+            <element signature="e#5610#5618#0" expanded="true" />
+            <element signature="e#6009#6017#0" expanded="true" />
             <element signature="method#groups#0;class#Network#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataFile.txt">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="12" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/User.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -730,25 +782,26 @@
             <element signature="method#register#0;class#Network#0" expanded="false" />
             <element signature="method#searchByName#0;class#Network#0" expanded="false" />
             <element signature="method#mutualFriends#0;class#Network#0" expanded="false" />
-            <element signature="method#shortestPath#0;class#Network#0" expanded="false" />
-            <element signature="e#5299#5307#0" expanded="true" />
-            <element signature="e#5741#5749#0" expanded="true" />
-            <element signature="e#5842#5850#0" expanded="true" />
-            <element signature="e#6241#6249#0" expanded="true" />
+            <element signature="e#3638#3655#0" expanded="true" />
+            <element signature="e#3711#3727#0" expanded="true" />
+            <element signature="e#5067#5075#0" expanded="true" />
+            <element signature="e#5509#5517#0" expanded="true" />
+            <element signature="e#5610#5618#0" expanded="true" />
+            <element signature="e#6009#6017#0" expanded="true" />
             <element signature="method#groups#0;class#Network#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataFile.txt">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/User.java">
@@ -777,25 +830,26 @@
             <element signature="method#register#0;class#Network#0" expanded="false" />
             <element signature="method#searchByName#0;class#Network#0" expanded="false" />
             <element signature="method#mutualFriends#0;class#Network#0" expanded="false" />
-            <element signature="method#shortestPath#0;class#Network#0" expanded="false" />
-            <element signature="e#5299#5307#0" expanded="true" />
-            <element signature="e#5741#5749#0" expanded="true" />
-            <element signature="e#5842#5850#0" expanded="true" />
-            <element signature="e#6241#6249#0" expanded="true" />
+            <element signature="e#3638#3655#0" expanded="true" />
+            <element signature="e#3711#3727#0" expanded="true" />
+            <element signature="e#5067#5075#0" expanded="true" />
+            <element signature="e#5509#5517#0" expanded="true" />
+            <element signature="e#5610#5618#0" expanded="true" />
+            <element signature="e#6009#6017#0" expanded="true" />
             <element signature="method#groups#0;class#Network#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataFile.txt">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/User.java">
@@ -824,25 +878,26 @@
             <element signature="method#register#0;class#Network#0" expanded="false" />
             <element signature="method#searchByName#0;class#Network#0" expanded="false" />
             <element signature="method#mutualFriends#0;class#Network#0" expanded="false" />
-            <element signature="method#shortestPath#0;class#Network#0" expanded="false" />
-            <element signature="e#5299#5307#0" expanded="true" />
-            <element signature="e#5741#5749#0" expanded="true" />
-            <element signature="e#5842#5850#0" expanded="true" />
-            <element signature="e#6241#6249#0" expanded="true" />
+            <element signature="e#3638#3655#0" expanded="true" />
+            <element signature="e#3711#3727#0" expanded="true" />
+            <element signature="e#5067#5075#0" expanded="true" />
+            <element signature="e#5509#5517#0" expanded="true" />
+            <element signature="e#5610#5618#0" expanded="true" />
+            <element signature="e#6009#6017#0" expanded="true" />
             <element signature="method#groups#0;class#Network#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataFile.txt">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/User.java">
@@ -871,25 +926,26 @@
             <element signature="method#register#0;class#Network#0" expanded="false" />
             <element signature="method#searchByName#0;class#Network#0" expanded="false" />
             <element signature="method#mutualFriends#0;class#Network#0" expanded="false" />
-            <element signature="method#shortestPath#0;class#Network#0" expanded="false" />
-            <element signature="e#5299#5307#0" expanded="true" />
-            <element signature="e#5741#5749#0" expanded="true" />
-            <element signature="e#5842#5850#0" expanded="true" />
-            <element signature="e#6241#6249#0" expanded="true" />
+            <element signature="e#3638#3655#0" expanded="true" />
+            <element signature="e#3711#3727#0" expanded="true" />
+            <element signature="e#5067#5075#0" expanded="true" />
+            <element signature="e#5509#5517#0" expanded="true" />
+            <element signature="e#5610#5618#0" expanded="true" />
+            <element signature="e#6009#6017#0" expanded="true" />
             <element signature="method#groups#0;class#Network#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataFile.txt">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="15" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/User.java">
@@ -918,11 +974,12 @@
             <element signature="method#register#0;class#Network#0" expanded="false" />
             <element signature="method#searchByName#0;class#Network#0" expanded="false" />
             <element signature="method#mutualFriends#0;class#Network#0" expanded="false" />
-            <element signature="method#shortestPath#0;class#Network#0" expanded="false" />
-            <element signature="e#5299#5307#0" expanded="true" />
-            <element signature="e#5741#5749#0" expanded="true" />
-            <element signature="e#5842#5850#0" expanded="true" />
-            <element signature="e#6241#6249#0" expanded="true" />
+            <element signature="e#3638#3655#0" expanded="true" />
+            <element signature="e#3711#3727#0" expanded="true" />
+            <element signature="e#5067#5075#0" expanded="true" />
+            <element signature="e#5509#5517#0" expanded="true" />
+            <element signature="e#5610#5618#0" expanded="true" />
+            <element signature="e#6009#6017#0" expanded="true" />
             <element signature="method#groups#0;class#Network#0" expanded="false" />
           </folding>
         </state>
@@ -990,14 +1047,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataFile.txt">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/socialNetwork.java">
@@ -1010,19 +1067,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Network.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.0585365">
-          <caret line="179" column="5" selection-start-line="179" selection-start-column="5" selection-end-line="179" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.9170732">
+          <caret line="177" column="5" selection-start-line="177" selection-start-column="5" selection-end-line="177" selection-end-column="5" />
           <folding>
             <element signature="e#206#212#0" expanded="true" />
             <element signature="method#usersData#0;class#Network#0" expanded="false" />
             <element signature="method#register#0;class#Network#0" expanded="false" />
             <element signature="method#searchByName#0;class#Network#0" expanded="false" />
             <element signature="method#mutualFriends#0;class#Network#0" expanded="false" />
-            <element signature="method#shortestPath#0;class#Network#0" expanded="false" />
-            <element signature="e#5299#5307#0" expanded="true" />
-            <element signature="e#5741#5749#0" expanded="true" />
-            <element signature="e#5842#5850#0" expanded="true" />
-            <element signature="e#6241#6249#0" expanded="true" />
+            <element signature="e#3638#3655#0" expanded="true" />
+            <element signature="e#3711#3727#0" expanded="true" />
+            <element signature="e#5067#5075#0" expanded="true" />
+            <element signature="e#5509#5517#0" expanded="true" />
+            <element signature="e#5610#5618#0" expanded="true" />
+            <element signature="e#6009#6017#0" expanded="true" />
             <element signature="method#groups#0;class#Network#0" expanded="false" />
           </folding>
         </state>
