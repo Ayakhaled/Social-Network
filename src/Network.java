@@ -76,6 +76,7 @@ public class Network {
 		
 	}
 	
+	//Choice 1
     //Search for specific user by his name and return his info.
 	public User searchByName(String searchName) throws IOException{
 		allUsers = usersData();
@@ -100,6 +101,7 @@ public class Network {
 		return foundUser;
 	}
 	
+	//Choice 2
     //This function returns a list of mutual friends between 2 users.
 	public ArrayList<String> mutualFriends(String user1, String user2) throws IOException{
 		ArrayList<String> mutualFriends = new ArrayList<String>();
@@ -122,6 +124,7 @@ public class Network {
 		return mutualFriends;
 	}
 
+	//Choice 3
 	//This function returns the shortest path between 2 non-friend users
 	public ArrayList<String> shortestPath(String source, String destination) throws IOException{
 
@@ -177,6 +180,7 @@ public class Network {
 		return myPath;
 	}
 
+	//Choice 4
     //This Function Follows 2 criteria on suggesting friends.
     //The first one is: the max number of links between the 2 users should be 5.
     //The second is: suggest friends working for the same company.
@@ -223,6 +227,7 @@ public class Network {
 		return suggestedFriends;
 	}
 	
+	//Choice 5
 	public void groups(){
 		
 	}
