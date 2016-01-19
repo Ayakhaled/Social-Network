@@ -76,6 +76,7 @@ public class Network {
 		
 	}
 	
+	//Choice 1
     //Search for specific user by his name and return his info.
 	public User searchByName(String searchName) throws IOException{
 		allUsers = usersData();
@@ -100,6 +101,7 @@ public class Network {
 		return foundUser;
 	}
 	
+	//Choice 2
     //This function returns a list of mutual friends between 2 users.
 	public ArrayList<String> mutualFriends(String user1, String user2) throws IOException{
 		ArrayList<String> mutualFriends = new ArrayList<String>();
@@ -121,64 +123,64 @@ public class Network {
 
 		return mutualFriends;
 	}
-    
+
+	//Choice 3
 	//This function returns the shortest path between 2 non-friend users
 	public ArrayList<String> shortestPath(String source, String destination) throws IOException{
+
 		allUsers = usersData();
+
 		ArrayList<String> myPath = new ArrayList();
 		ArrayList<String> friends = new ArrayList();
-		
-		ArrayList<String> user1Info = new ArrayList<String>();
-		ArrayList<String> user2Info = new ArrayList<String>();
-		
-		user1Info = searchByName(source).friendList;
-		user2Info = searchByName(destination).friendList;
-		
+
 		HashMap<String, Boolean> visited = new HashMap<String, Boolean>();
 		HashMap<String, String> Predecessors = new HashMap<String, String>();
-		
-		
+
 		for(int i=0; i<allUsers.size(); i++){
-			
 			visited.put(allUsers.get(i).name, false);
 		}
-		
+
 		Queue queue = new LinkedList();
-		Queue backTrack = new LinkedList();
-		
+		Boolean exist = false;
+
 		//BFS start
 		queue.add(source);
 		visited.remove(source);
 		visited.put(source, true);
-		
-		while(!queue.isEmpty()){
-			 String parent = (String)queue.poll();
-			 friends = searchByName(parent).friendList;
 
-			 for(int i=0; i<friends.size(); i++){
-				 if(!visited.get(friends.get(i)))
-					 Predecessors.put(friends.get(i), parent);
-				 
-				 if(!friends.get(i).equals(destination) && !visited.get(friends.get(i))){
-					 queue.add(friends.get(i));
-					 visited.remove(friends.get(i));
-					 visited.put(friends.get(i), true);
-				 }
-				 else if (friends.get(i).equals(destination))
-					 break;
-			 }
+		while(!queue.isEmpty()){
+			String parent = (String)queue.poll();
+			friends = searchByName(parent).friendList;
+
+			for(int i=0; i<friends.size(); i++){
+				if (friends.get(i).equals(destination)){
+					Predecessors.put(friends.get(i), parent);
+					exist=true;
+					break;
+				}
+				else if(!visited.get(friends.get(i))){
+					Predecessors.put(friends.get(i), parent);
+
+					if(!friends.get(i).equals(destination)){
+						queue.add(friends.get(i));
+						visited.remove(friends.get(i));
+						visited.put(friends.get(i), true);
+					}
+				}
+			}
+			if (exist)
+				break;
 		}
-		
+
 		myPath.add(destination);
 		while(!destination.equals(source)){
 			destination = Predecessors.get(destination);
 			myPath.add(destination);
 		}
-		
-		myPath.remove(myPath.size()-1);
 		return myPath;
 	}
 
+	//Choice 4
     //This Function Follows 2 criteria on suggesting friends.
     //The first one is: the max number of links between the 2 users should be 5.
     //The second is: suggest friends working for the same company.
@@ -225,6 +227,7 @@ public class Network {
 		return suggestedFriends;
 	}
 	
+	//Choice 5
 	public void groups(){
 		
 	}
