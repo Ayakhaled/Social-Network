@@ -8,6 +8,8 @@ import java.util.*;
 public class Network {
 	ArrayList<User>allUsers = new ArrayList<User>();
 
+	double edges=Double.POSITIVE_INFINITY;
+	double balance=0;
 
 	ArrayList<User> usersData() throws IOException{
 		int noOfUsers = 0;
@@ -228,7 +230,98 @@ public class Network {
 	}
 	
 	//Choice 5
-	public void groups(){
+	public List<List<String>> groups() throws IOException{
 		
+		allUsers = usersData();
+		//ArrayList<List<String>> groups= new ArrayList<List<String>>();
+		
+		List<List<String>> groups= new ArrayList<List<String>>();
+		List<ArrayList<String>> groupsFriends= new ArrayList<ArrayList<String>>();
+		//List<String> group= new ArrayList<String>();
+		//Set<String> groupFriends= new HashSet<String>();
+		
+		for(int i=0;i<allUsers.size();i++){
+			
+			//group.add(allUsers.get(i).name);
+			groupsFriends.add(allUsers.get(i).friendList);
+			
+			groups.add(new ArrayList<String>());
+			groups.get(i).add(allUsers.get(i).name) ;
+//		group.remove(i);
+		}
+		
+		while(groups.size()>2){
+			
+			boolean done = false;
+			Random rand = new Random();
+			int x=rand.nextInt(groups.size());
+			int y=rand.nextInt(groupsFriends.get(x).size());
+			
+			String node=groupsFriends.get(x).get(y);
+			
+			for(int i=0;i<groups.size();i++){
+				for(int j = 0;j<groups.get(i).size();j++){
+				if(node.equals(groups.get(i).get(j))){
+					groups.get(x).addAll(groups.get(i));	//merge nodes
+					groupsFriends.get(x).addAll(groupsFriends.get(i));
+					
+					groupsFriends.get(x).removeAll(groups.get(x));
+					
+					groups.remove(i);
+					groupsFriends.remove(i);
+					done = true;
+					break;
+				}
+				}
+				if (done)
+					break;
+			}
+			edges = groupsFriends.get(0).size();
+			balance = Math.abs(groups.get(0).size()-groups.get(1).size());	
+		}
+//		System.out.println("Group 1 : " +groups.get(0));
+//		System.out.println(groupsFriends.get(0));
+//		
+//		System.out.println("Group 2 : " +groups.get(1));
+//		System.out.println(groupsFriends.get(1));
+		return groups;
+		
+	}
+	
+	public void optimalGroups() throws IOException{
+		double minEdges = Double.POSITIVE_INFINITY;
+		double bestBalance = Double.POSITIVE_INFINITY;
+		int[] noOfEdgesTemp = new int[20];
+		//HashMap<Integer, List> s=new HashMap<Integer, List>();
+		int[] balanceArrayTemp = new int[20];
+		List<List<String>> possibleGroups = new ArrayList<List<String>>();
+		List<List<String>> best2Groups = new ArrayList<List<String>>();
+		
+		for(int i=0; i<20; i++){
+			//possibleGroups.add(new ArrayList<String>());
+			possibleGroups = groups();
+			
+			if(edges<minEdges){
+				minEdges=edges;
+				bestBalance=balance;
+				best2Groups = possibleGroups ;
+			}
+			else if(edges==minEdges){
+				if(balance<bestBalance){
+					minEdges=edges;
+					bestBalance=balance;
+					best2Groups = possibleGroups ;
+				}
+				else
+					continue;
+			}
+			else{
+				continue;
+			}
+		
+			System.out.println("Group1:"+best2Groups.get(0));
+			System.out.println("Group2:"+best2Groups.get(1));
+		
+		}
 	}
 }
