@@ -112,7 +112,7 @@ public class Network {
 		userInfo1 = searchByName(user1).friendList;
 		userInfo2 = searchByName(user2).friendList;
 
-		for (int i = 0; i < userInfo1.size(); i++) {
+		for (int i=0; i<userInfo1.size(); i++) {
 			for (int j = 0; j < userInfo2.size(); j++) {
 				if (userInfo1.get(i).equals(userInfo2.get(j))){
 					mutualFriends.add(userInfo1.get(i));
@@ -223,7 +223,6 @@ public class Network {
 			}
 		}
 		suggestedFriends.removeAll(forbidFriends);
-		System.out.println(suggestedFriends);
 		return suggestedFriends;
 	}
 	
